@@ -4,6 +4,6 @@ export const SidebarItems = [
   {
     title: "JSON formatter",
     url: "/json-formatter",
-    icon: Brdghjgaces,
+    icon: Braces,
   }
 ]
