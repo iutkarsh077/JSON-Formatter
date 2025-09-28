@@ -10,6 +10,6 @@ jobs:
          runs-on: ubuntu-latest
          steps:
             - uses: actions/checkout@v4
-            - run: docker build -t iutkarsh077/json-formatter
+            - run: docker build . -t iutkarsh077/json-formatter
             - run: echo "${{secrets.DOCKERHUB_PASSWORD}}" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password-stdin
             - run: docker push iutkarsh077/json-formatter:latest
